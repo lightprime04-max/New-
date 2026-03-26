@@ -1,0 +1,99 @@
+body{
+  margin:0;
+  font-family:Poppins;
+  background:black;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* CANVAS BG */
+#bg{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+/* GLASS */
+.glass{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(15px);
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+/* NAV */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+}
+
+/* LOGO */
+.logo{
+  font-family:Orbitron;
+  color:#00f0ff;
+  text-shadow:0 0 20px #00f0ff;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:120px 20px;
+}
+
+.glow-text{
+  font-size:42px;
+  font-family:Orbitron;
+  color:#00f0ff;
+  text-shadow:0 0 20px #00f0ff,0 0 40px #8b5cf6;
+}
+
+/* SUBTEXT */
+.sub{
+  opacity:0.7;
+  margin-bottom:20px;
+}
+
+/* BUTTONS */
+.btn{
+  padding:12px 25px;
+  margin:10px;
+  border-radius:12px;
+  cursor:pointer;
+  border:none;
+  transition:0.3s;
+}
+
+.primary{
+  background:linear-gradient(45deg,#00f0ff,#8b5cf6);
+}
+
+.secondary{
+  border:2px solid #00f0ff;
+  background:none;
+  color:#00f0ff;
+}
+
+.btn:hover{
+  transform:scale(1.15);
+  box-shadow:0 0 30px #00f0ff;
+}
+
+/* FEATURES */
+.features{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:50px;
+}
+
+.card{
+  padding:30px;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-15px);
+  box-shadow:0 0 30px #00f0ff;
+}
