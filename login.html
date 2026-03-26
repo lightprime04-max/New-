@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login</title>
+  <input id="username" type="text" placeholder="Username">
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,3 +36,16 @@
 
 </body>
 </html>
+<script>
+function login(){
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  if(user === "admin" && pass === "1234"){
+    alert("Login successful 🚀");
+    window.location.href = "shop.html";
+  } else {
+    alert("Wrong credentials ❌");
+  }
+}
+</script>
