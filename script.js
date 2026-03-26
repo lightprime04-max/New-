@@ -40,6 +40,7 @@ function animate(){
     p.x += p.vx;
     p.y += p.vy;
 
+
     ctx.fillStyle="#00f0ff";
     ctx.fillRect(p.x,p.y,2,2);
   });
@@ -48,3 +49,15 @@ function animate(){
 }
 
 animate();
+
+function login(){
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  if(user === "admin" && pass === "1234"){
+    alert("Login successful 🚀");
+    window.location.href = "shop.html";
+  } else {
+    alert("Wrong credentials ❌");
+  }
+}
